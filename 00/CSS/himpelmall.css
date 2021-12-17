@@ -96,3 +96,43 @@ header .inner .gnb li input {
   background-repeat: no-repeat;
   background-position: calc(100% - 20px) center;
 }
+
+main {
+  width: 100%;
+  position: relative;
+}
+
+main .main_img {
+  width: 100%;
+}
+
+main .dot {
+  display: flex;
+  width: 200px;
+  height: 20px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid blue;
+  position: absolute;
+  left: 50%; bottom: 35px;
+  /* 메인 사진 안이 기준 */
+  /* 브라우저 기준으로 50% */
+  transform: translateX(-50%);
+  /* 브라우저를 반으로 나눈거의 오른쪽에 붙은 동그라미 있는 사각형의 50%이동 - 화면에서 정 가운데로 이동*/
+}
+
+main .dot li{  
+}
+
+main .dot li a{
+  display: block;
+  width: 20px;
+  height: 20px;
+  margin-left: 15px;
+  background-color: lightgray;
+  border-radius: 100%;
+}
+
+main .dot li .active {
+  background-color: red;
+}
