@@ -1,0 +1,126 @@
+@charset "utf-8";
+a {
+  text-decoration: none;
+}
+header {
+  width: 100%;
+}
+
+header .inner {
+  width: calc(100% - 350px);
+  height: 70px;
+  margin: 0 auto;
+}
+
+header .inner .header_top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;  
+  padding: 30px 0;
+}
+
+header .inner .header_top .logo_wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header .inner .header_top h1 {
+}
+
+header .inner .header_top h1 a {
+  display: block;
+  width: 190px;
+  height: 31px;
+  background-image: url(../img/logo.png);
+  background-repeat: no-repeat;
+  text-indent: -9999px;
+  margin: 0 15px 0 0;
+}
+
+header .inner .header_top h1 button {}
+
+header .inner .header_top .topNav {
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+}
+
+header .inner .header_top .topNav li{
+  height: 50px;
+  align-items: center;
+  display: flex;
+  padding: 10px;
+}
+
+header .inner .header_top .topNav li a {
+  align-content: center;
+  align-items: center;
+  font-size: 13px;
+  color:#000;
+}
+
+.header_bot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header_bot .nav {
+  display: flex;
+}
+
+.header_bot .nav li {
+  padding: 0 10px;
+}
+
+.header_bot .nav li a {
+  font-size: 17px;
+  color:#000;
+  font-weight: bold;
+}
+
+#last_a {
+  font-size: 13px;
+}
+/* 햄버거 바 만들기 82~96번째 줄 */
+header .header_bot .nav li:first-child button{
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+header .header_bot .nav li:first-child button .line{
+  width: 25px;
+  height: 3px;
+  background-color: #000;
+  margin-top: 5px;
+}
+header .header_bot .nav li:first-child button .line:first-child{
+  margin-top: 0;
+}
+
+header .inner .gnb li input {
+  width: 255px;
+  height: 40px;
+  border: 1px solid #f7f7f7;
+  border-radius: 20px;
+  background-image: url(../img/btnSearch.png);
+  background-repeat: no-repeat;
+  background-position: calc(100% - 15px) center;
+}
+
+header .inner .gnb li a {
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-image: url(../img/btnCart.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  
+}
+
+header .inner .gnb {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
