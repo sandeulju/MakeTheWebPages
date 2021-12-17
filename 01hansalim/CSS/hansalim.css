@@ -25,6 +25,15 @@ header .inner .header_top .logo_wrap {
   justify-content: center;
 }
 
+header .inner .header_top .logo_wrap a {
+  color: #666;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 0 10px;
+}
+
 header .inner .header_top h1 {
 }
 
@@ -116,7 +125,6 @@ header .inner .gnb li a {
   background-image: url(../img/btnCart.png);
   background-repeat: no-repeat;
   background-position: center center;
-  
 }
 
 header .inner .gnb {

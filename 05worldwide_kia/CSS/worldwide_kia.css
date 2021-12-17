@@ -12,7 +12,7 @@ header {
 }
 
 header .inner {
-  width: calc(100% - 350px);
+  width: calc(100% - 50px);
   height: 70px;
   margin: 0 auto;
   display: flex;
