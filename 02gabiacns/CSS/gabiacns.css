@@ -9,8 +9,8 @@ header {
 }
 
 header .inner {
-  width: calc(100% - 350px);
-  height: 70px;
+  width: calc(100% - 500px);
+  height: 60px;
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -34,7 +34,38 @@ header .inner .nav li:last-child {
 
 header .inner .nav li a {
   color: #000;
-  font-size: 14px;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 15px;
   padding: 0 14px;
 }
 
+main {
+  width: 100%;
+  position: relative;
+}
+
+main .main_img {
+  width: 100%;
+}
+
+main .dot {
+  display: flex;
+  width: 200px;
+  height: 11px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid blue;
+  position: absolute;
+  left: 50%; bottom: 35px;
+  transform: translateX(-50%);
+}
+
+main .dot li a  {
+  display: block;
+  width: 12px;
+  height: 12px;
+  margin-left: 12px;
+  background-color: none;
+  border: 1px solid #fff;
+  border-radius: 100%;
+}

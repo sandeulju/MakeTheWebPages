@@ -7,8 +7,8 @@ header {
 }
 
 header .inner {
-  width: calc(100% - 350px);
-  height: 70px;
+  width: calc(100% - 700px);
+  height: 145px;
   margin: 0 auto;
 }
 
@@ -16,7 +16,7 @@ header .inner .header_top {
   display: flex;
   align-items: center;
   justify-content: space-between;  
-  padding: 30px 0;
+  padding: 20px 0 6px;
 }
 
 header .inner .header_top .logo_wrap {
@@ -131,4 +131,39 @@ header .inner .gnb {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+/* main */
+main {
+  width: 100%;
+  position: relative;
+}
+
+main .main_img {
+  width: 100%;
+}
+
+main .dot {
+  display: flex;
+  width: 200px;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 20%; bottom: 35px;
+  transform: translateX(-50%);
+}
+
+main .dot li{}
+
+main .dot li:nth-child(1) {
+  display: block;
+  width: 20px;
+  height: 20px;
+  margin-left: 15px;
+  background-color: lightgray;
+  border-radius: 50% 0 50 0;
+}
+
+main .dot li .active {
+  background-color: red;
 }

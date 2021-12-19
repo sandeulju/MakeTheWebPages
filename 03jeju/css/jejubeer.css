@@ -10,7 +10,7 @@ header {
 
 header .inner {
   width: calc(100% - 350px);
-  height: 70px;
+  height: 118px;
   margin: 0 auto;
 }
 
@@ -76,4 +76,10 @@ header .inner .header_top ul li:last-child a {
   color: #55585B;
   font-size: 14px;
   font-weight: bold;
+}
+
+main .video_box video{
+  display: flex;
+  align-items: center;
+  text-align: center;
 }
