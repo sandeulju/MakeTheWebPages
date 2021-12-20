@@ -1,5 +1,27 @@
 @charset "utf-8";
 /* 무조건 쓰면 좋은거 */
+
+.top_btn{
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  background: gray;
+  z-index: 10;
+  position: fixed;
+  right: 50px; bottom: 50px;
+  text-align: center;
+  line-height: 100px;
+  color: #fff;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.top_btn:hover{
+  width: 80px;
+  height: 80px;
+  line-height: 80px;
+}
+
 a{
   text-decoration: none;
 }
@@ -7,8 +29,13 @@ header {
   width: 100%;
 }
 
+.inner {
+  width: calc(100% - 354px);
+  margin: 0 auto;
+}
+
 header .inner {
-  width:calc(100% - 350px);
+  width:calc(100% - 354px);
   /* 양쪽 합 354 왼쪽 354/2, 오른쪽 354/2 를 하고 나머지가 넓이 */
   height: 70px;
   margin: 0 auto;
@@ -53,6 +80,7 @@ header .inner .nav li {
 header .inner .nav li:last-child {
   margin-right: 0;
 }
+
 header .inner .nav li a {
   color: #000;
   font-weight: bold;
@@ -134,4 +162,78 @@ main .dot li a{
 
 main .dot li .active {
   background-color: #000
+}
+
+.section01{
+  width: 100%;
+}
+.section01 .inner{
+  padding: 8rem;
+}
+.section01 .inner h2{
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+.section01 .inner .wrap{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.section01 .inner .wrap li {
+  width: 500px;
+  height: auto;
+  border: 1px solid #000;
+  border-radius: 30px;
+  overflow: hidden;
+  position: relative;
+  margin-left: 30px;
+}
+.section01 .inner .wrap li a{
+  display: block;
+}
+
+.section01 .inner .wrap li a .gra{
+  display: block;
+  position: absolute;
+  left: 0; top: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(transparent, black 100%);
+}
+.section01 .inner .wrap li .text_wrap{
+  display: block;
+  width: 100%;
+  height: auto;
+  position: absolute;
+  left: 10px; bottom: 10px;
+}
+
+.section01 .inner .wrap li > a img{
+  width: 100%;
+}
+
+.section01 .inner .wrap li .text_wrap p{
+  font-size: 30px;
+  color: #fff;
+  margin-bottom: 25px;
+}
+
+.section01 .inner .wrap li .text_wrap a{
+  display: block;
+  padding: 10px;
+  /* background-color: pink; */
+  font-size: 20px;
+  color: #fff;
+}
+
+.section01 .inner .wrap li .text_wrap a:last-child{
+  display: block;
+  width: 100px;
+  text-align: center;
+  padding: 10px;
+  background-color: rgb(253,57,90);
+  font-size: 20px;
+  border-radius: 50px;
+  color: #fff;
 }

@@ -1,5 +1,31 @@
 @charset "utf-8";
 
+.top_btn{
+  position: fixed;
+  right: 50px; top: 50px;
+  transition: all 0.3s;
+  z-index: 10;
+  /*  10개의 레이어 위에 쌓겟다*/
+}
+
+.top_btn{
+  position: fixed;
+  right: 200px;
+  top: 200px;
+  animation: swing 0.8s 0.2s linear infinite alternate;
+}
+
+@keyframes swing {
+  0%{
+    top: 200px;
+  }
+  /* 처음에 시작해서 중간까지 왔을때*/
+  100%{
+    top: 230px;
+  }
+}
+
+
 a{
   text-decoration: none;
   color: #000;
@@ -96,3 +122,4 @@ main {
 main .main_img{
   width: 100%;
 }
+
