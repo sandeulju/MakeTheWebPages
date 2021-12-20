@@ -47,6 +47,28 @@ main video {
   object-fit: cover;
 }
 
-main .text_wrap{
+main .start_button {
 
+}
+main .text_wrap{
+  display: block;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid blue;
+  position: absolute;
+  left: 50%; bottom: 100px;
+  transform: translateX(-50%);
+  font-size: 32px;
+}
+
+main .text_wrap h2 {
+  font-size: 4.2rem;
+  line-height: 1.4;
+  font-weight: bold;
+  color: gray;
+}
+
+main .text_wrap p {
+  font-size: 16px;
+  color: gray;
 }

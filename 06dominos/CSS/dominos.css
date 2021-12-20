@@ -87,3 +87,12 @@ header .inner .header_top .topNav li a {
   color: #000;
   margin-right:50px;
 }
+
+main {
+  width: 100%;
+  position: relative;
+}
+
+main .main_img{
+  width: 100%;
+}

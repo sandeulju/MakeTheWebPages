@@ -108,11 +108,10 @@ main .main_img {
 
 main .dot {
   display: flex;
-  width: 200px;
+  width: 150px;
   height: 20px;
   align-items: center;
   justify-content: center;
-  border: 1px solid blue;
   position: absolute;
   left: 50%; bottom: 35px;
   /* 메인 사진 안이 기준 */
@@ -129,10 +128,10 @@ main .dot li a{
   width: 20px;
   height: 20px;
   margin-left: 15px;
-  background-color: lightgray;
+  background-color: rgba(0, 0, 0, 0.25);
   border-radius: 100%;
 }
 
 main .dot li .active {
-  background-color: red;
+  background-color: #000
 }
