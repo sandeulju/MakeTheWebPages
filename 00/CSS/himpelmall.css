@@ -183,7 +183,7 @@ main .dot li .active {
 .section01 .inner .wrap li {
   width: 500px;
   height: auto;
-  border: 1px solid #000;
+  /* border: 1px solid #000; */
   border-radius: 30px;
   overflow: hidden;
   position: relative;
@@ -237,3 +237,35 @@ main .dot li .active {
   border-radius: 50px;
   color: #fff;
 }
+
+footer {
+  width: 100%;
+  background-color: #59595b;
+}
+
+footer .inner {
+  padding: 3rem 0;
+}
+
+footer .inner h2{
+  width: 115px;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  m
+}
+footer .inner h2 a{
+  display: block;
+  width: 400px;
+}
+footer .inner .company {}
+footer .inner .company li{}
+footer .inner .company li a{}
+footer .inner .address li {}
+footer .inner .address li a{}
+footer .inner .ceo{}
+footer .inner .ceo li{}
+footer .inner .sns {}
+footer .inner .sns li{}
+footer .inner .sns li a{}
+footer .inner .copy {}
+footer .inner .copy p{}
