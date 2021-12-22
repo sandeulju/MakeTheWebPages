@@ -54,13 +54,13 @@ main .dot {
   height: 11px;
   align-items: center;
   justify-content: center;
-  border: 1px solid blue;
   position: absolute;
-  left: 50%; bottom: 35px;
+  left: 50%;
+  bottom: 35px;
   transform: translateX(-50%);
 }
 
-main .dot li a  {
+main .dot li a {
   display: block;
   width: 12px;
   height: 12px;
@@ -68,4 +68,70 @@ main .dot li a  {
   background-color: none;
   border: 1px solid #fff;
   border-radius: 100%;
+}
+
+.section01 {
+  width: 100%;
+}
+
+.section01 .inner {
+  padding: 8rem;
+}
+
+.section01 .inner h2 {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-align: center;
+  line-height: 1.4;
+  margin-bottom: 20px;
+}
+
+.section01 .inner .wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 80px;
+}
+
+.section01 .inner .wrap .circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ddd;
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+
+}
+
+.section01 .inner .wrap li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 30px;
+}
+
+.section01 .inner .wrap li .text_wrap {
+  text-align: left;
+  margin-left: 30px;
+}
+
+.section01 .inner .wrap li .text_wrap p {
+  margin-bottom: 20px;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: left;
+}
+
+.section01 .inner .wrap p {
+  display: flex;
+  align-items:center;
+  color: #000;
+  font-size: 1.46rem;
+  font-weight: 500;
+}
+
+.section01 .inner .wrap a {
+  color: #7c7c7c;
 }
