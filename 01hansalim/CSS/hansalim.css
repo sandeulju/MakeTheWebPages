@@ -167,3 +167,50 @@ main .dot li:nth-child(1) {
 main .dot li .active {
   background-color: red;
 }
+
+/* section_bot */
+
+/* section01 */
+.section01{}
+.section01 .inner{
+  padding: 10rem 0;
+}
+.section01 .inner table{
+  width: 80%;
+  margin: 0 auto;
+}
+.section01 .inner table caption{
+  text-align-last: left;
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin: 2rem 0;
+}
+.section01 .inner table tbody{}
+.section01 .inner table tbody tr{}
+.section01 .inner table tbody tr td{}
+.section01 .inner table tbody tr td a{}
+.section01 .inner table tbody tr td a .bg{
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+  transition: all .5s;
+}
+.section01 .inner table tbody tr td a .bg:hover img{
+  width: 400px;
+}
+.section01 .inner table tbody tr td a .bg img{
+  border: 1px solid #000;
+}
+.section01 .inner table tbody tr td a h3{
+  font-size: 1.3rem;
+  margin: 1.5rem 0;
+  color: #000;
+}
+.section01 .inner table tbody tr td a p{
+  font-size: 1.2rem;
+  color: #000;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+
