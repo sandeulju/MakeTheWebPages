@@ -135,3 +135,67 @@ main .dot li a {
 .section01 .inner .wrap a {
   color: #7c7c7c;
 }
+
+footer {
+  background-color: #f6f6f6;
+  padding-top: 50px;
+}
+
+footer .inner a {
+  color: #000;
+}
+
+footer .inner,
+footer .last_footer{
+  width: calc(100% - 500px);
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+footer .comment li:first-child{
+  font-size: 19px;
+  line-height: 1.5;
+}
+
+footer .comment li:nth-child(2){
+  font-size: 32px;
+}
+
+footer .comment li:last-child {
+  display: block;
+  text-align: center;
+  justify-content: center;
+  width: 180px;
+  height: 50px;
+  background-color: #333;
+  border-radius: 30px;
+  font-size: 14px;
+  color: #fff;
+}
+
+.sns ul, footer .inner .space {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+}
+
+footer .inner .comment li{
+  font-size: 14px;
+}
+
+
+footer .last_footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between
+}
+
+footer .last_footer li:first-child {
+  font-size: 14px;
+}
+
+footer .last_footer li:last-child {
+  font-size: 12px;
+}

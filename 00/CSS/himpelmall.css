@@ -2,23 +2,21 @@
 /* 무조건 쓰면 좋은거 */
 
 .top_btn{
-  width: 100px;
-  height: 100px;
-  border-radius: 100%;
-  background: gray;
-  z-index: 10;
   position: fixed;
-  right: 50px; bottom: 50px;
-  text-align: center;
-  line-height: 100px;
-  color: #fff;
+  width: 85px;
+  height: 85px;
+  right: 100px; bottom: 100px;
+  z-index: 99;
+  text-align: center;  /* line-height: 100px; */
   transition: all 0.3s;
   cursor: pointer;
 }
 
 .top_btn:hover{
   width: 80px;
-  height: 80px;
+  bottom: 80px;
+  right: 80px;
+  left: -80px;
   line-height: 80px;
 }
 
@@ -246,26 +244,95 @@ footer {
 footer .inner {
   padding: 3rem 0;
 }
-
+  
 footer .inner h2{
   width: 115px;
   margin-left: 50%;
   transform: translateX(-50%);
-  m
+  /* margin-left랑 transform은 짝
+  margin-left가 절반으로 나눠서 절반 중 오른쪽(에서 왼쪽)에 딱 붙음
+  [   |*  ]
+  그걸 가운데로 맞추기 위해서 사진의 절반을 transform으로 왼쪽 편에 줌 */
+  margin-bottom: 2rem;
 }
+  
 footer .inner h2 a{
   display: block;
-  width: 400px;
 }
-footer .inner .company {}
-footer .inner .company li{}
-footer .inner .company li a{}
-footer .inner .address li {}
-footer .inner .address li a{}
-footer .inner .ceo{}
-footer .inner .ceo li{}
-footer .inner .sns {}
-footer .inner .sns li{}
-footer .inner .sns li a{}
-footer .inner .copy {}
-footer .inner .copy p{}
+
+footer .inner h2 a img {
+  margin-left: 50%;
+  transform: translateX(-50%);
+  /* footer .inner h2에서  적어준 게 적용이 잘 안 될 수도 있어서
+  예방 차원에서 한번 더 작성*/
+}
+  
+footer .inner .company,
+footer .inner .address,
+footer .inner .ceo,
+footer .inner .sns,
+footer .inner .copy,
+footer .inner .kc_img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* 이 세개는 세트 */
+  margin-bottom: 2rem;
+}
+  
+footer .inner .company li{
+  margin-left: 20px;
+  position: relative;
+}
+  
+footer .inner .company li:first-child,
+footer .inner .address li:first-child,
+footer .inner .ceo li:first-child{
+  margin-left: 0;
+  /* 첫번째꺼만 왼쪽 마진 없앰으로써 가운데에 배치 */
+}
+  
+footer .inner .company li a{
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+}
+  
+footer .inner .company li a::before,
+footer .inner .address li::before,
+footer .inner .ceo li::before {
+  /* 막대기 만들기 */
+  content: '';
+  display: block;
+  width: 1px;
+  height: 100%;
+  background-color: #fff;
+  position: absolute;
+  right: -10px; top: 0;
+}
+  
+footer .inner .address li,
+footer .inner .ceo li,
+footer .inner .sns li,
+footer .inner .copy {
+  color: #fff;
+  margin-left: 20px;
+  font-size: 14px;
+  position: relative;
+}
+  
+footer .inner .sns li:last-child {
+  display: block;
+  justify-content: center;
+  width: 100px;
+  height: 35px;
+  background-color: #e20d48;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  text-align: center;  
+}
+
+  footer .inner .sns li:last-child a {
+    color: #fff;
+  }
