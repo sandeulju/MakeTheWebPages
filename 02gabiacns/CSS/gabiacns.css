@@ -141,6 +141,11 @@ footer {
   padding-top: 50px;
 }
 
+footer .inner {
+  padding-bottom: 60px;
+  border-bottom: 1px solid gainsboro
+}
+
 footer .inner a {
   color: #000;
 }
@@ -154,25 +159,55 @@ footer .last_footer{
   justify-content: space-between;
 }
 
-footer .comment li:first-child{
+footer .last_footer {
+  padding-top: 20px;
+}
+footer .inner .space .sitemape,
+footer .inner .space .family_site,
+footer .inner .space .sns {
+  margin: 0 0 0 150px;
+}
+
+footer .inner .space .sitemape li,
+footer .inner .space .sitemape li a,
+footer .inner .space .family_site li,
+footer .inner .space .family_site li a,
+footer .inner .space .sns {
+  line-height: 2rem;
+  font-size: 13px;
+}
+
+
+
+footer .inner .space .sitemape li:first-child,
+footer .inner .space .family_site li:first-child,
+footer .inner .space .sns li{
+  font-weight: bold;
+  font-size: 16px;
+}
+
+
+footer .inner .comment li:first-child{
   font-size: 19px;
   line-height: 1.5;
 }
 
-footer .comment li:nth-child(2){
+footer .inner .comment li:nth-child(2){
   font-size: 32px;
 }
 
-footer .comment li:last-child {
+footer .inner .comment li:last-child a{
   display: block;
   text-align: center;
   justify-content: center;
   width: 180px;
   height: 50px;
   background-color: #333;
-  border-radius: 30px;
-  font-size: 14px;
   color: #fff;
+  font-size: 14px;
+  border-radius: 30px;
+  margin: 50px 0 100px;
+  line-height: 50px;
 }
 
 .sns ul, footer .inner .space {
@@ -181,10 +216,13 @@ footer .comment li:last-child {
   justify-content: center;
 }
 
-footer .inner .comment li{
-  font-size: 14px;
+footer .inner .sns ul li:first-child a img,
+footer .inner .sns ul li:last-child a img {
+display: block;
+background-color: #333;
+border-radius: 50px;
+margin-left: 8px;
 }
-
 
 footer .last_footer {
   display: flex;
@@ -196,6 +234,11 @@ footer .last_footer li:first-child {
   font-size: 14px;
 }
 
+footer .last_footer li:first-child a {
+  color: #777;
+}
+
 footer .last_footer li:last-child {
   font-size: 12px;
+  color: #afafaf;
 }
